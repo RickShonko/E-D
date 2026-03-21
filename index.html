@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="topbar">
+        <div class="brand">
+            <span class="brand-mark">E&D</span>
+            <span class="brand-tagline">Tech Solutions</span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-copy">
+            <span class="eyebrow">Build smarter with E&amp;D</span>
+            <h1>Modern digital solutions with a sharper blue edge.</h1>
+            <p>We design technology experiences that feel polished, perform beautifully, and help businesses move faster with confidence.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="services.html">Explore Services</a>
+                <a class="btn btn-secondary" href="Contact.html">Start a Project</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <strong>Web</strong>
+                    <span class="stat-label">Responsive experiences that feel fast and premium.</span>
+                </div>
+                <div class="stat">
+                    <strong>Apps</strong>
+                    <span class="stat-label">Mobile products built for scale, clarity, and impact.</span>
+                </div>
+                <div class="stat">
+                    <strong>AI</strong>
+                    <span class="stat-label">Practical automation and intelligence for modern teams.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-panel">
+            <div class="carousel">
+                <button class="prev btn" onclick="moveSlide(-1)" aria-label="Previous slide">❮</button>
+                <div class="slides">
+                    <img src="image.png" class="slide" alt="Creative website design showcase">
+                    <img src="image1.png" class="slide" alt="Mobile app interface showcase">
+                    <img src="image2.png" class="slide" alt="Modern technology solutions showcase">
+                </div>
+                <div class="carousel-overlay">
+                    <h2>Design that feels current</h2>
+                    <p>Layered visuals, cleaner spacing, and a richer blue palette give the brand a more modern presence.</p>
+                </div>
+                <button class="next btn" onclick="moveSlide(1)" aria-label="Next slide">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-grid">
+        <article class="card">
+            <h2>Creative Direction</h2>
+            <p>We combine visual identity, interaction design, and clear storytelling to make your brand look more intentional online.</p>
+        </article>
+        <article class="card">
+            <h2>Technical Depth</h2>
+            <p>From polished landing pages to production-ready applications, we build digital products with strong foundations.</p>
+        </article>
+        <article class="card">
+            <h2>Business Focus</h2>
+            <p>Every design and development choice is shaped around growth, usability, and long-term maintainability.</p>
+        </article>
+    </section>
+
+<script>
+let slideIndex = 0;
+showSlide(slideIndex);
+
+function moveSlide(n) {
+    showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+    let slides = document.getElementsByClassName("slide");
+
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+</script>
+</main>
+
+<footer>
+    <p>© 2026 E&D. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
