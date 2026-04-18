@@ -443,3 +443,19 @@ footer {
         height: 40px;
     }
 }
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.company-name {
+    font-weight: 600;
+    font-size: 18px;
+}
