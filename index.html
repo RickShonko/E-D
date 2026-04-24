@@ -3,111 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E&D</title>
+
+    <!-- PRIMARY SEO META TAGS -->
+    <title>E&D Tech Solutions | Web, App &amp; AI Development in Nairobi, Kenya</title>
+    <meta name="description" content="E&D Tech Solutions is a Nairobi-based digital agency offering web development, mobile app development, AI automation, cybersecurity, and IT consulting for businesses across Kenya.">
+    <meta name="keywords" content="web development Kenya, mobile app development Nairobi, IT solutions Kenya, AI automation Nairobi, tech company Kenya, software development Nairobi, cybersecurity Kenya, IT consulting Nairobi">
+    <meta name="author" content="E&D Tech Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.edtechsolutions.dev/">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.edtechsolutions.dev/">
+    <meta property="og:title" content="E&D Tech Solutions | Web, App &amp; AI Development in Nairobi, Kenya">
+    <meta property="og:description" content="Nairobi-based digital agency specialising in web development, mobile apps, AI automation, and IT consulting for businesses across Kenya.">
+    <meta property="og:image" content="https://www.edtechsolutions.dev/logo.png">
+    <meta property="og:locale" content="en_KE">
+    <meta property="og:site_name" content="E&D Tech Solutions">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="E&D Tech Solutions | Nairobi, Kenya">
+    <meta name="twitter:description" content="Modern web, app, and AI solutions for Kenyan businesses. Based in Nairobi.">
+    <meta name="twitter:image" content="https://www.edtechsolutions.dev/logo.png">
+
+    <!-- STRUCTURED DATA: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "E&D Tech Solutions",
+      "description": "Nairobi-based digital agency offering web development, mobile app development, AI automation, cybersecurity, and IT consulting across Kenya.",
+      "url": "https://www.edtechsolutions.dev",
+      "logo": "https://www.edtechsolutions.dev/logo.png",
+      "image": "https://www.edtechsolutions.dev/logo.png",
+      "email": "info@edtechsolutions.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "areaServed": { "@type": "Country", "name": "Kenya" },
+      "serviceType": ["Web Development","Mobile App Development","AI Solutions","Graphic Design","Cybersecurity","IT Consulting"]
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
     <div class="topbar">
         <div class="brand">
-            <img src="logo.png" alt="E & D Tech Solutions Logo" class="logo">
+            <a href="index.html" aria-label="E&D Tech Solutions Home">
+                <img src="logo.png" alt="E&amp;D Tech Solutions Logo — Nairobi, Kenya" class="logo">
+            </a>
             <span class="company-name">Tech Solutions</span>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul class="nav-menu">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="Contact.html">Contacts</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main>
-    <section class="hero">
+    <section class="hero" aria-label="Hero">
         <div class="hero-copy">
-            <span class="eyebrow">Build smarter with E&amp;D</span>
+            <span class="eyebrow">Digital Agency in Nairobi, Kenya</span>
             <h1>Modern digital solutions with a sharper blue edge.</h1>
-            <p>We design technology experiences that feel polished, perform beautifully, and help businesses move faster with confidence.</p>
+            <p>E&amp;D Tech Solutions is a Nairobi-based digital agency. We design technology experiences that feel polished, perform beautifully, and help Kenyan businesses move faster with confidence.</p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="services.html">Explore Services</a>
+                <a class="btn btn-primary" href="services.html">Explore Our Services</a>
                 <a class="btn btn-secondary" href="Contact.html">Start a Project</a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <strong>Web</strong>
-                    <span class="stat-label">Responsive experiences that feel fast and premium.</span>
+                    <strong>Web Development</strong>
+                    <span class="stat-label">Responsive websites that feel fast and premium.</span>
                 </div>
                 <div class="stat">
-                    <strong>Apps</strong>
-                    <span class="stat-label">Mobile products built for scale, clarity, and impact.</span>
+                    <strong>Mobile Apps</strong>
+                    <span class="stat-label">Android &amp; iOS products built for scale and impact.</span>
                 </div>
                 <div class="stat">
-                    <strong>AI</strong>
+                    <strong>AI Solutions</strong>
                     <span class="stat-label">Practical automation and intelligence for modern teams.</span>
                 </div>
             </div>
         </div>
 
         <div class="hero-panel">
-            <div class="carousel">
-                <button class="prev btn" onclick="moveSlide(-1)" aria-label="Previous slide">❮</button>
+            <div class="carousel" role="region" aria-label="Portfolio showcase">
+                <button class="prev btn" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
                 <div class="slides">
-                    <img src="image.webp" class="slide" alt="Creative website design showcase">
-                    <img src="image1.webp" class="slide" alt="Mobile app interface showcase">
-                    <img src="image2.webp" class="slide" alt="Modern technology solutions showcase">
+                    <img src="image.webp" class="slide" alt="Website design project by E&amp;D Tech Solutions Nairobi" width="600" height="400" loading="eager">
+                    <img src="image1.webp" class="slide" alt="Mobile app development project by E&amp;D Tech Solutions Kenya" width="600" height="400" loading="lazy">
+                    <img src="image2.webp" class="slide" alt="Modern technology solution built by E&amp;D Tech Solutions" width="600" height="400" loading="lazy">
                 </div>
                 <div class="carousel-overlay">
                     <h2>Design that feels current</h2>
-                    <p>Layered visuals, cleaner spacing, and a richer palette give the brand a more modern presence.</p>
+                    <p>Layered visuals, cleaner spacing, and a richer palette give your brand a more modern online presence.</p>
                 </div>
-                <button class="next btn" onclick="moveSlide(1)" aria-label="Next slide">❯</button>
+                <button class="next btn" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
             </div>
         </div>
     </section>
 
-    <section class="section-grid">
+    <section class="section-grid" aria-label="Our approach">
         <article class="card">
             <h2>Creative Direction</h2>
-            <p>We combine visual identity, interaction design, and clear storytelling to make your brand look more intentional online.</p>
+            <p>We combine visual identity, interaction design, and clear storytelling to make your brand look more intentional online — whether you're a startup or an established Kenyan business.</p>
         </article>
         <article class="card">
             <h2>Technical Depth</h2>
-            <p>From polished landing pages to production-ready applications, we build digital products with strong foundations.</p>
+            <p>From polished landing pages to production-ready applications, we build digital products with strong foundations that scale with your business.</p>
         </article>
         <article class="card">
             <h2>Business Focus</h2>
-            <p>Every design and development choice is shaped around growth, usability, and long-term maintainability.</p>
+            <p>Every design and development decision is shaped around growth, usability, and long-term value for businesses across Kenya and East Africa.</p>
         </article>
     </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 E&amp;D Tech Solutions. All Rights Reserved. | Nairobi, Kenya | <a href="mailto:info@edtechsolutions.dev">info@edtechsolutions.dev</a></p>
+</footer>
 
 <script>
 let slideIndex = 0;
 showSlide(slideIndex);
-
-function moveSlide(n) {
-    showSlide(slideIndex += n);
-}
-
+function moveSlide(n) { showSlide(slideIndex += n); }
 function showSlide(n) {
     let slides = document.getElementsByClassName("slide");
-
     if (n >= slides.length) { slideIndex = 0; }
     if (n < 0) { slideIndex = slides.length - 1; }
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
+    for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
     slides[slideIndex].style.display = "block";
 }
 </script>
-</main>
-
-<footer>
-    <p>© 2026 E&D. All Rights Reserved.</p>
-</footer>
 </body>
 </html>
